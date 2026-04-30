@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="../../../DviZe.Common/src/DviZe.Common.csproj" />
+  <Project Path="../../src/DviZe.Win.Wnf.csproj" />
+  <Project Path="ExampleApp1.csproj" />
+</Solution>
