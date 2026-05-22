@@ -2,17 +2,6 @@
 
 A .NET 10 class library for working with undocumented Windows Notification Facility (WNF) APIs.
 
-```csharp
-using Kwerty.DviZe.Win.Wnf;
+See [WnfClient](docs/WnfClient.md) for the full API, or [ExampleApp1](examples/ExampleApp1/) for examples.
 
-const ulong WNF_SHEL_LOCKSCREEN_ACTIVE = 0xD83063EA3BC5835;
-
-var subscription = wnfClient.SubscribeAsync(WNF_SHEL_LOCKSCREEN_ACTIVE, evt =>
-{
-    Console.WriteLine("Lockscreen active");
-});
-
-subscription.Dispose(); // Unsubscribe.
-```
-
-See [ExampleApp1](examples/ExampleApp1/) for other examples.
+🥂 Cheers to [nag0mez](https://github.com/nagomez97), who reverse engineered the undocumented WNF APIs and documented them in his [WNF Chronicles](https://pwnedcoffee.com/blog/wnf-chronicles-i-introduction/) series.
