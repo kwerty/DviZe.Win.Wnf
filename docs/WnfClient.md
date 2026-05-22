@@ -62,7 +62,7 @@ public void Delete(ulong stateName);
 
 Deletes the specified WNF state.
 
-Note, this causes subscribers to receive an event with an empty buffer.
+Note, this causes subscribers to receive an event with a zero-length buffer.
 
 ## GetSize
 
@@ -119,7 +119,7 @@ Updates the specified WNF state.
 
 If `currentChangeStamp` is specified, the update only succeeds if the current change stamp matches.
 
-If an empty/no buffer is provided, the WNF state will be cleared. Typically reserved for pulse-only states (data size 0).
+If a zero-length/no buffer is provided, the WNF state will be cleared. Typically reserved for pulse-only states (data size 0).
 
 No schema is enforced. The native API only rejects writes that exceed the state's maximum data size. Writing too little data or data of the wrong layout will silently corrupt the state.
 

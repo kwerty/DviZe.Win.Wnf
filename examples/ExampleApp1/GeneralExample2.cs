@@ -47,7 +47,7 @@ public class GeneralExample2(WnfClient wnfClient, ILogger<GeneralExample2> logge
         logger.LogInformation("Unsubscribed from events.");
 
         // Delete the state.
-        // Note: This this will cause subscribers to receive an event with an empty buffer,
+        // Note: This this will cause subscribers to receive an event with a zero-length buffer,
         // which is why we unsubscribed first.
 
         wnfClient.Delete(stateName);
