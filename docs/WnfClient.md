@@ -29,8 +29,8 @@ Must be running as **LocalSystem** for `WnfLifetime.WellKnown` and `WnfLifetime.
 | Value         | Description
 | :-            | :-
 | `WellKnown`   | Built-in state names defined by the OS.
-| `Persistent`  | Persists across reboots. Microsoft refers to this as **Permanent** internally.
-| `Volatile`    | Removed upon reboot. Microsoft refers to this as **Persistent** internally.
+| `Persistent`  | Persists across reboots.
+| `Volatile`    | Removed upon reboot.
 | `Temporary`   | Removed when the process ends.
 
 ### WnfScope
