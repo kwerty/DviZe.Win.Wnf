@@ -379,6 +379,7 @@ public sealed class WnfClient : IAsyncDisposable
     /// <summary>
     /// Subscribes to state change notifications for the specified WNF state.
     /// </summary>
+    /// <returns>An <see cref="IDisposable"/> which should be disposed to unsubscribe.</returns>
     /// <exception cref="ArgumentException" />
     /// <exception cref="WnfException" />
     /// <exception cref="ObjectDisposedException" />
@@ -388,6 +389,7 @@ public sealed class WnfClient : IAsyncDisposable
     /// <summary>
     /// Subscribes to state change notifications for the specified WNF state.
     /// </summary>
+    /// <returns>An <see cref="IDisposable"/> which should be disposed to unsubscribe.</returns>
     /// <exception cref="ArgumentException" />
     /// <exception cref="WnfException" />
     /// <exception cref="ObjectDisposedException" />
@@ -405,6 +407,7 @@ public sealed class WnfClient : IAsyncDisposable
     /// <summary>
     /// Subscribes to state change notifications for the specified WNF state, reinterpreting state data as <typeparamref name="T"/>.
     /// </summary>
+    /// <returns>An <see cref="IDisposable"/> which should be disposed to unsubscribe.</returns>
     /// <exception cref="ArgumentException" />
     /// <exception cref="WnfException" />
     /// <exception cref="ObjectDisposedException" />
@@ -414,6 +417,7 @@ public sealed class WnfClient : IAsyncDisposable
     /// <summary>
     /// Subscribes to state change notifications for the specified WNF state, reinterpreting state data as <typeparamref name="T"/>.
     /// </summary>
+    /// <returns>An <see cref="IDisposable"/> which should be disposed to unsubscribe.</returns>
     /// <exception cref="ArgumentException" />
     /// <exception cref="WnfException" />
     /// <exception cref="ObjectDisposedException" />
