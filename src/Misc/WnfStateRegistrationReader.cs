@@ -9,7 +9,7 @@ namespace Kwerty.DviZe.Win.Wnf.Misc;
 
 public static class WnfStateRegistrationReader
 {
-    public static IEnumerable<Registration> GetAll(WnfLifetime lifetime)
+    public static IReadOnlyList<Registration> GetAll(WnfLifetime lifetime)
     {
         var keyPath = lifetime switch
         {

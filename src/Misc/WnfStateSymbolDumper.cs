@@ -11,7 +11,7 @@ namespace Kwerty.DviZe.Win.Wnf.Misc;
 
 public static class WnfStateSymbolDumper
 {
-    public static IEnumerable<Symbol> GetAll(string dllPath = null)
+    public static IReadOnlyList<Symbol> GetAll(string dllPath = null)
     {
         dllPath ??= Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), "ContentDeliveryManager.Utilities.dll");
 
